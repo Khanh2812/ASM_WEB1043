@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignement</title>
+
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="menu-container">
+                <div class="logo"></div>
+                <div class="menu">
+                    <a class="menu-item" href="./index.html"><p>Trang chủ</p></a>
+                    <a class="menu-item" href="#" onclick="dropOutMenuClick()" onmouseover="dropOutMenuMoveOver()" onmouseout="dropOutMenuMoveOut()"><p>Sản phẩm</p></a>
+                    <a class="menu-item" href="#"><p>Liên hệ</p></a>
+                    <a class="menu-item" href="./sign-up.html"><p>Đăng kí</p></a>
+                </div>
+            </div>
+            <br>
+            <div id="banner">
+                <div id="drop-out">
+                    <ul id="drop-out-menu">
+                        <li class="drop-out-menu-item">Quần</li>
+                        <li class="drop-out-menu-item">Áo</li>
+                        <li class="drop-out-menu-item">Giày</li>
+                        <li class="drop-out-menu-item">Balo</li>
+                        <li class="drop-out-menu-item">Dụng cụ</li>
+                    </ul>
+                </div>
+                <button class="next slide" onclick="next()" ondblclick="start()"></button>
+                <button class="previous slide" onclick="previous()" ondblclick="stop()"></button>
+            </div>
+            <div class="clock"><div id="countDown">24:00:00</div></div>
+            <h2 class="title">SẢN PHẨM MỚI</h2>
+            <form class="search">
+                <p class="word-search">Từ</p>
+                <input required id="timKiemMin" class="txt-search" type="text">
+                <p class="word-search">Đến</p>
+                <input required id="timKiemMax" class="txt-search" type="text">
+                <button class="btn-search" type="submit">Lọc</button>
+            </form>
+            <div class="products">
+                <div class="product">
+                    <div class="product-image0"></div>
+                    <div class="product-info">
+                        <p class="product-name">ÁO LEO NÚI</p>
+                        <p class="product-price">250k</p>
+                    </div>
+                    <p class="addCart">ADD TO CART</p>
+                </div>
+                <div class="product">
+                    <div class="product-image1"></div>
+                    <div class="product-info">
+                        <p class="product-name">QUẦN LEO NÚI</p>
+                        <p class="product-price">300k</p>
+                    </div>
+                    <p class="addCart">ADD TO CART</p>
+                </div>
+                <div class="product">
+                    <div class="product-image2"></div>
+                    <div class="product-info">
+                        <p class="product-name">BALO LEO NÚI</p>
+                        <p class="product-price">600k</p>
+                    </div>
+                    <p class="addCart">ADD TO CART</p>
+                </div>
+                <div class="product">
+                    <div class="product-image3"></div>
+                    <div class="product-info">
+                        <p class="product-name">ÁO KHOÁC LEO NÚI</p>
+                        <p class="product-price">950k</p>
+                    </div>
+                    <p class="addCart">ADD TO CART</p>
+                </div>
+                <div class="product">
+                    <div class="product-image4"></div>
+                    <div class="product-info">
+                        <p class="product-name">GIÀY LEO NÚI</p>
+                        <p class="product-price">1300k</p>
+                    </div>
+                    <p class="addCart">ADD TO CART</p>
+                </div>
+                <div class="product">
+                    <div class="product-image5"></div>
+                    <div class="product-info">
+                        <p class="product-name">ÁO BÓ LEO NÚI</p>
+                        <p class="product-price">600k</p>
+                    </div>
+                    <p class="addCart">ADD TO CART</p>
+                </div>
+            </div>
+            <div class="footer"></div>
+        </div>
+        <script src="./index.js"></script>
+    </body>
+</html>

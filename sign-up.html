@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="sign-container">
+        <div class="menu-container">
+            <div class="logo"></div>
+            <div class="menu">
+                <a class="menu-item" href="./index.html"><p>Trang chủ</p></a>
+                <a class="menu-item" href="#"><p></p>Sản phẩm</p></a>
+                <a class="menu-item" href="#"><p></p>Liên hệ</p></a>
+                <a class="menu-item" href="./sign-up.html"><p></p>Đăng kí</p></a>
+            </div>
+        </div>
+        <div class="sign-form-background"></div>
+        <form id="myForm" class="sign-form" onsubmit="return kiemTraThongTin()">
+            <p class="sign-title">SIGN UP</p>
+            <input id="txt-name" class="txt-sign" placeholder="Username" type="text">
+            <p class="err" id="errUserNull" style="color: red; display: none;">Người dùng không được để trống</p>
+            <input id="txt-number" class="txt-sign" placeholder="Phone number" type="text">
+            <p class="err" id="errSDTNull" style="color: red; display: none;">Số điện thoại không được để trống</p>
+            <p class="err" id="errSDTLimit" style="color: red; display: none;">Số điện thoại phải có 10 số</p>
+            <p class="err" id="errSDTNAN" style="color: red; display: none;">Toàn bộ số điện thoại phải là số</p>
+            <input id="txt-email" class="txt-sign" placeholder="Email" type="text">
+            <p class="err" id="errEmailNull" style="color: red; display: none;">Email không được để trống</p>
+            <p class="err" id="errEmail@" style="color: red; display: none;">Email phải có @</p>
+            <p class="err" id="errEmail." style="color: red; display: none;">Email phải có .</p>
+            <input id="txt-password" class="txt-sign" placeholder="Password" type="password">
+            <div class="showPassword"><input type="checkbox" onclick="showPassword()"><p class="lblShowPasword">Show Password</p></div>
+            <p class="err" id="errPassNull" style="color: red; display: none;">Mật khẩu không được để trống</p>
+            <p class="err" id="errPassLimit" style="color: red; display: none;">Mật khẩu phải có 8 kí tự</p>
+            <input id="txt-confirm-password" class="txt-sign" placeholder="Comfirm password" type="password">
+            <div class="showPassword"><input type="checkbox" onclick="showComfirmPassword()"><p class="lblShowPasword">Show Comfirm Password</p></div>
+            <p class="err" id="errPassComfirmNull" style="color: red; display: none;">Xác nhận mật khẩu không được để trống</p>
+            <p class="err" id="errPassComfirm" style="color: red; display: none;">Xác nhận mật khẩu không đúng</p>
+            <button type="submit" class="btn-sign" >SIGN UP</button>
+        </form>
+        <script src="./index.js"></script>
+    </div>
+</body>
+</html>
